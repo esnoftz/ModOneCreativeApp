@@ -18,42 +18,81 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uk6-VZ-L9B">
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bestDadCandyMachine" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-m0-fOz">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="396.66666666666669"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locker Candy!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k98-wD-xpj">
-                                        <rect key="frame" x="77" y="396.66666666666669" width="239" height="91.333333333333314"/>
-                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
+                                        <rect key="frame" x="39.333333333333343" y="0.0" width="314.33333333333326" height="79.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter amount taken out..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0BE-hz-W0f">
-                                        <rect key="frame" x="95.333333333333329" y="488" width="202.33333333333337" height="36"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bestDadCandyMachine" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-m0-fOz">
+                                        <rect key="frame" x="0.0" y="79.333333333333343" width="393" height="293.33333333333326"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter amount taken out..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0BE-hz-W0f">
+                                        <rect key="frame" x="59" y="372.66666666666669" width="275" height="39.666666666666686"/>
                                         <color key="backgroundColor" red="0.86078912019729614" green="0.59469767127025774" blue="0.82417137421712816" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l13-3l-7jE">
-                                        <rect key="frame" x="157.66666666666666" y="524" width="78" height="34.333333333333371"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l13-3l-7jE">
+                                        <rect key="frame" x="137.66666666666666" y="412.33333333333331" width="117.66666666666666" height="39.666666666666686"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitTakenOutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Be-WL-MyA"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter amount put in..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylq-cC-cC6">
-                                        <rect key="frame" x="110.33333333333333" y="558.33333333333337" width="172.66666666666669" height="36"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter amount put in..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylq-cC-cC6">
+                                        <rect key="frame" x="59" y="452" width="275" height="39.666666666666686"/>
                                         <color key="backgroundColor" red="0.86078912019999998" green="0.59469767129999995" blue="0.82417137419999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRu-xD-0ME">
-                                        <rect key="frame" x="157.66666666666666" y="594.33333333333337" width="78" height="198.66666666666663"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRu-xD-0ME">
+                                        <rect key="frame" x="137.66666666666666" y="491.66666666666663" width="117.66666666666666" height="39.666666666666629"/>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitPutInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGe-2Y-3X5"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Candies: 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mf-bX-fY1">
+                                        <rect key="frame" x="39.333333333333343" y="531.33333333333337" width="314.33333333333326" height="79.333333333333371"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-Fz-K55">
+                                        <rect key="frame" x="39.333333333333343" y="610.66666666666663" width="314.33333333333326" height="103"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="CkF-72-a20">
+                                        <rect key="frame" x="39.333333333333343" y="713.66666666666663" width="314.33333333333326" height="79.333333333333371"/>
+                                        <connections>
+                                            <action selector="timeAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="c5m-p4-DiJ"/>
+                                        </connections>
+                                    </datePicker>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Ibl-m0-fOz" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.5" id="qeb-YG-O1K"/>
+                                    <constraint firstItem="CkF-72-a20" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.1" id="0Lc-ct-D4c"/>
+                                    <constraint firstItem="eRg-Fz-K55" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.8" id="0bB-Zg-ghX"/>
+                                    <constraint firstItem="l13-3l-7jE" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.3" id="24M-q9-B3y"/>
+                                    <constraint firstItem="k98-wD-xpj" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.8" id="3KU-0G-r3V"/>
+                                    <constraint firstItem="0BE-hz-W0f" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.7" id="4fC-tw-eO2"/>
+                                    <constraint firstItem="ylq-cC-cC6" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.7" id="9qV-wz-Nbo"/>
+                                    <constraint firstItem="eRg-Fz-K55" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.13" id="IVl-eL-4xx"/>
+                                    <constraint firstItem="ylq-cC-cC6" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.05" id="Klx-Rv-Sf4"/>
+                                    <constraint firstItem="6mf-bX-fY1" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.1" id="Qfe-DM-gm1"/>
+                                    <constraint firstItem="CRu-xD-0ME" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.05" id="bJR-Mz-UMw"/>
+                                    <constraint firstItem="k98-wD-xpj" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.1" id="cKh-e3-dAF"/>
+                                    <constraint firstItem="CRu-xD-0ME" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.3" id="fEH-1K-diT"/>
+                                    <constraint firstItem="l13-3l-7jE" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.05" id="kgw-z7-UuQ"/>
+                                    <constraint firstItem="6mf-bX-fY1" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.8" id="l5G-6J-rU1"/>
+                                    <constraint firstItem="CkF-72-a20" firstAttribute="width" secondItem="Uk6-VZ-L9B" secondAttribute="width" multiplier="0.8" id="mJD-GA-I0H"/>
+                                    <constraint firstItem="0BE-hz-W0f" firstAttribute="height" secondItem="Uk6-VZ-L9B" secondAttribute="height" multiplier="0.05" id="mgj-kE-Vlu"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -68,7 +107,9 @@
                     </view>
                     <connections>
                         <outlet property="enteredTextField" destination="ylq-cC-cC6" id="DRA-q6-uex"/>
+                        <outlet property="errorLabel" destination="eRg-Fz-K55" id="4ct-IT-H07"/>
                         <outlet property="takenOutTextField" destination="0BE-hz-W0f" id="ewV-C4-4H8"/>
+                        <outlet property="totalCandiesLabel" destination="6mf-bX-fY1" id="SSL-Mr-8Jf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
