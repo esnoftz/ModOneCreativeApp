@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         
         totalCandies = 100
         totalCandiesLabel.text = "Current Candies: 100"
-        errorLabel.text = "It's a new day! Candy has been refilled!"
+        errorLabel.text = "Candy is refilled!"
     }
     
 
